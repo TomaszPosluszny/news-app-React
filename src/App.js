@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
+function News({ name, power, code }) {
+	return (
+		<div>
+			<h2>{name}</h2>
+			<p>{power}</p>
+			<p>{code}</p>
+		</div>
+	);
+}
+
+const data = [
+	{
+		name: 'Haier',
+		power: '5 kW',
+    code: 'B235'
+	},
+  {
+		name: 'Haier',
+		power: '3,5 kW',
+    code: 'B235'
+	},
+  {
+		name: 'Lg',
+		power: '2,5 kW',
+    code: 'C654'
+	},
+
+];
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+      {data.map((elem) =>{
+      return <News name={elem.name} power={elem.power} code={elem.code} />
+  })}
+		</div>
+	);
 }
 
 export default App;
