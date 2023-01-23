@@ -2,8 +2,10 @@
   text-align: center;
 }
 
-.News {
-  background-color: grey;
+
+
+.NewsClass {
+  background-color: rgb(15, 90, 38);
   border: black 1px solid;
   padding: 5px;
   margin: 10px;
