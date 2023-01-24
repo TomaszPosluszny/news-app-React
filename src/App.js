@@ -1,9 +1,7 @@
 import React from 'react';
 
-import News from './components/News'
+import News from './pages/News';
 import './App.css';
-
-
 
 class AddNews extends React.Component {
 	state = {
@@ -27,11 +25,6 @@ class AddNews extends React.Component {
 		);
 	}
 }
-
-
-
-
-
 
 const data = [
 	{
@@ -60,8 +53,18 @@ function App() {
 			{data.map((elem) => {
 				return (
 					<div>
-						<News key={`news-${elem.id}`} name={elem.name} power={elem.power} code={elem.code} />
-						<AddNews key={`news-${elem.id}`} name={elem.name} power={elem.power} code={elem.code} />
+						<News
+							key={`news-${elem.id}`}
+							name={elem.name}
+							power={elem.power}
+							code={elem.code}
+						/>
+						<AddNews
+							key={`news-${elem.id}`}
+							name={elem.name}
+							power={elem.power}
+							code={elem.code}
+						/>
 					</div>
 				);
 			})}
