@@ -1,7 +1,11 @@
 import React from 'react';
 
 import News from './pages/News';
+import Header from './components/Header';
+import{Logo, NavLink} from './components/Header'
 import './App.css';
+
+
 
 class AddNews extends React.Component {
 	state = {
@@ -50,6 +54,7 @@ const data = [
 function App() {
 	return (
 		<div className='App'>
+			<Header/>
 			{data.map((elem) => {
 				return (
 					<div>
