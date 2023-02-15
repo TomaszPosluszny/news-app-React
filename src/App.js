@@ -5,7 +5,7 @@ import Header from './components/Header';
 // import Articles from './pages/Articles';
 import Content from './components/content';
 import Footer from './components/Footer';
-import Form from './pages/Form'
+import Registration from './pages/Registration'
 import './App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 			<Header />
 			<Content>
 				{/* <Articles /> */}
-				<Form/>
+				<Registration/>
 			</Content>
 			<Footer/>
 		</div>
