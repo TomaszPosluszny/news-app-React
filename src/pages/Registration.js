@@ -11,9 +11,9 @@ function useInput(initialValue = '') {
 }
 
 function Registration() {
-  const [name, handleNameChange] = useInput('Patryk');
-  const [surname, handleSurnameChange] = useInput('Omiotek');
-  const [age, handleAgeChange] = useInput('35');
+  const [name, handleNameChange] = useInput('Tomasz');
+  const [surname, handleSurnameChange] = useInput('Posłuszny');
+  const [age, handleAgeChange] = useInput('34');
   const surnameInput = useRef();
 
   const handleClick = () => console.log('React Button');
